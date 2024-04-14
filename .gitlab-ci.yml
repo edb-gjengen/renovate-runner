@@ -1,5 +1,6 @@
 variables:
   RENOVATE_EXTRA_FLAGS: edb/galtinn
+  LOG_LEVEL: debug
 
 include:
     - remote: https://gitlab.com/renovate-bot/renovate-runner/-/raw/v17.171.0/templates/renovate.gitlab-ci.yml
