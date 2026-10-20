@@ -1,7 +1,7 @@
 # renovate-runner
 
-Runs [Renovate](https://docs.renovatebot.com) on edb's repositories on git.neuf.no, daily from
-`.gitea/workflows/renovate.yaml`.
+Runs [Renovate](https://docs.renovatebot.com) on edb's repositories on git.neuf.no, every 4 hours between 10:00 and
+23:00, from `.gitea/workflows/renovate.yaml`.
 
 Renovate finds repositories by autodiscovery: every repository in `edb` it can write to. To add a repository, give
 Renovate write access to it. Renovate then opens an onboarding PR with a `renovate.json`, unless the repository already
