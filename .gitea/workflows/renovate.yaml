@@ -2,10 +2,10 @@ name: Renovate
 
 on:
   schedule:
-    # Every 4 hours from 09 to 21 UTC: 10-22 in Oslo in winter, 11-23 in summer. Each
-    # repository's renovate.json decides when PRs open; a run refreshes its dependency
-    # dashboard and opens the PRs approved there.
-    - cron: "17 9-21/4 * * *"
+    # Daily at 15:47 UTC: 16:47 in Oslo in winter, 17:47 in summer. Each repository's
+    # renovate.json decides when PRs open; a run refreshes its dependency dashboard and
+    # opens the PRs approved there.
+    - cron: "47 15 * * *"
   workflow_dispatch:
 
 jobs:
